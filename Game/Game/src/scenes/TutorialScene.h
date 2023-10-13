@@ -50,6 +50,36 @@ private:
 		"\nCon esto dicho, solo me queda despedirme. ¡Ánimo en tu aventura! ¡Nos vemos en el espacio, cowboy!"
 	};
 
+	string tutorialTextsEn[14] = {
+		// Movimiento
+		"Welcome to Timeless Deck! I am Tuto and I will be your guide in this place.\n For starters, every time I show up you must press 'REANUDAR' to continue.",
+		"\nThat being said, try moving with the controls I will show you on screen",
+
+		// Carta
+		"Very well! It's about time I show you the magic of this place... your weapons are cards!",
+		"\nLook, Im gonna give you a card for you to try, although you can have 4 maximum cards in your hand.\nCheck my screen to learn how to aim and shoot and check the card to see their uses.",
+
+		// Mano
+		"Great! On top of the four cards in your hand, you will have a discard pile and a deck, each one on one side.",
+		"When you consume a card, it will be discarded and if you have no more cards after that, you will draw 4 more from the deck. When the deck runs out of cards, the discard pile will shuffle and make a new deck. Try it!",
+
+		// Enemigos
+		"You're a fast learner! Here in this place you must defeat enemies in order to continue. These enemies will try to hurt you bad, so give it your everything to defeat them.",
+		"\nFor now, you have 100 health points (red bar), but every enemy will deal you different damage. Remember: you can choose which card you use.",
+
+		// Habilidad
+		"See that? The enemy has dropped mana! (blue stones).\nMana (blue bar) is required to use the cards' skills. Run over them to pick them up.",
+		"\nCard skills show up in their upper zone with how much mana costs to activate, and will consume ALL card uses. Try using one!",
+
+		// Portal
+		"The enemy drops other stuff... aether! (purple dust).\nYou will need aether (white circle) to charge the portal, having to load it to 100% in order to get to the next nivel.",
+		"\nAether will fly to you after a time, so you just have to worry about defeating the more enemies the better!.",
+
+		// Fin
+		"Alright, that is all! Im going to top up you aether charge and you will be able to leave the zone as you will see on my screen.",
+		"\nWith this said, it's time for me to leave. Good luck in your adventure! See you in space, cowboy!"
+	};
+
 public:
 	// Constructora
 	TutorialScene(BattleType bt);
