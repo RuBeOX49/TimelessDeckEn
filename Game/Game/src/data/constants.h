@@ -387,7 +387,7 @@ const string SYMBOLS_KEYS[5] = {
 	"LifeSymbol", "ManaSymbol", "SpeedSymbol", "AttackSymbol", "CadenceSymbol"
 };
 const string STATS_TEXTS[5] = {
-	"Vida", "Mana", "Velocidad", "Ataque", "Cadencia"
+	"Health", "Mana", "Speed", "Attack", "Fire Rate"
 };
 const int SYMBOL_DIMENSIONS = 64;
 const Vector2D SYMBOL_POSITIONS[5] = {

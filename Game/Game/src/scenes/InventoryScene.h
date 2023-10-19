@@ -30,9 +30,9 @@ struct InventoryCard
 class InventoryScene : public GameState {
 private:
 	string texts[3] = {
-		"BIENVENIDO A TU INVENTARIO. Aquí podrás ver todas las cartas que posees y las que tienes en el mazo, así como tus objetos y estadísticas.",
-		"También podrás modificar tu mazo añadiendo cartas del inventario (clicando sobre ellas en la zona de inventario) ",
-		"o retirando las ya presentes (clicando sobre ellas en la zona del mazo)",
+		"Welcome to your inventory! Here you can see all the cards you have and those which are in your deck. You can also see your items and stats.",
+		"You can also modify your deck adding cards from the inventory (clicking over the cards in the inventory zone) ",
+		"or taking out the ones currently on your deck (clicking over the cards in your deck zone)",
 	};
 	
 	bool interactive;

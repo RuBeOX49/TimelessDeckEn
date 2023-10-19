@@ -178,11 +178,11 @@ void ChestScene::standarizeText(GameObject* g, int stat) {
 
 // Devuelve un string con la era correspondiente
 string ChestScene::getEraString(string rEra) {
-	string completeEra = "Del ";
+	string completeEra = "From ";
 
-	if (rEra == "F") completeEra += "Futuro";
-	else if (rEra == "R") completeEra += "Presente";
-	else completeEra += "Pasado";
+	if (rEra == "F") completeEra += "Future";
+	else if (rEra == "R") completeEra += "Present";
+	else completeEra += "Past";
 
 	return completeEra;
 }

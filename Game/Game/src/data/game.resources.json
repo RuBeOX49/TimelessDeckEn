@@ -185,18 +185,18 @@
       { "id" : "PresentFloor", "file" : "../Game/resources/images/Floors/FloorPresent.png" },
       { "id" : "FutureFloor", "file" : "../Game/resources/images/Floors/FloorFuture.png" },
 
-      { "id" : "Almacenamiento Cuantico", "file" : "../Game/resources/images/Objects/AlmacenamientoCuantico_32x32.png" },
+      { "id" : "Quantic Storage", "file" : "../Game/resources/images/Objects/AlmacenamientoCuantico_32x32.png" },
       { "id" : "Hoverboard", "file" : "../Game/resources/images/Objects/Hoverboard_32x32.png" },
-      { "id" : "Engranaje Aureo", "file" : "../Game/resources/images/Objects/EngranajeAureo_32x32.png" },
-      { "id" : "Brazalete de Iones", "file" : "../Game/resources/images/Objects/BrazaleteDeIones_32x32.png" },
-      { "id" : "Regalo", "file" : "../Game/resources/images/Objects/Regalo_32x32.png" },
-      { "id" : "Reloj Digital", "file" : "../Game/resources/images/Objects/RelojDigital_32x32.png" },
-      { "id" : "Collar Gotico", "file" : "../Game/resources/images/Objects/CollarGotico_32x32.png" },
-      { "id" : "Cinturon de Herramientas", "file" : "../Game/resources/images/Objects/CinturonDeHerramientas_32x32.png" },
-      { "id" : "Cetro Papal", "file" : "../Game/resources/images/Objects/CetroPapal_32x32.png" },
-      { "id" : "Libro Perdido", "file" : "../Game/resources/images/Objects/LibroPerdido_32x32.png" },
-      { "id" : "Taza de Cafe", "file" : "../Game/resources/images/Objects/TazaDeCafe_32x32.png" },
-      { "id" : "Barco en Miniatura", "file" : "../Game/resources/images/Objects/BarcoEnBotella_32x32.png" },
+      { "id" : "Aureum Gear", "file" : "../Game/resources/images/Objects/EngranajeAureo_32x32.png" },
+      { "id" : "Ionic Gauntlet", "file" : "../Game/resources/images/Objects/BrazaleteDeIones_32x32.png" },
+      { "id" : "Present", "file" : "../Game/resources/images/Objects/Regalo_32x32.png" },
+      { "id" : "Smartwatch", "file" : "../Game/resources/images/Objects/RelojDigital_32x32.png" },
+      { "id" : "Gothic Necklace", "file" : "../Game/resources/images/Objects/CollarGotico_32x32.png" },
+      { "id" : "Toolbelt", "file" : "../Game/resources/images/Objects/CinturonDeHerramientas_32x32.png" },
+      { "id" : "Pope's Scepter", "file" : "../Game/resources/images/Objects/CetroPapal_32x32.png" },
+      { "id" : "Lost Chapter", "file" : "../Game/resources/images/Objects/LibroPerdido_32x32.png" },
+      { "id" : "Coffee Mug", "file" : "../Game/resources/images/Objects/TazaDeCafe_32x32.png" },
+      { "id" : "Miniature Boat", "file" : "../Game/resources/images/Objects/BarcoEnBotella_32x32.png" },
 
       { "id" : "GachaChest", "file": "../Game/resources/images/UI/ChestScene/GachaChest_46x26.png" },
       { "id":  "Sparkles", "file": "../Game/resources/images/UI/ChestScene/Sparkles_32x32.png" },
@@ -270,8 +270,8 @@
 
   "relics": [
     {
-      "id": "Almacenamiento Cuantico",
-      "description": "Contiene la sabiduria de quienes viven en el futuro",
+      "id": "Quantic Storage",
+      "description": "Contains the wisdom of people of the future",
       "era": "F",
       "health": "10",
       "movementVelocity": "0",
@@ -281,7 +281,7 @@
     },
     {
       "id": "Hoverboard",
-      "description": "Este invento del futuro mejora la movilidad de los ciudadanos",
+      "description": "This trinket from the future makes travelling easier for the citizens",
       "era": "F",
       "health": "0",
       "movementVelocity": "25",
@@ -290,8 +290,8 @@
       "attack": "0"
     },
     {
-      "id": "Engranaje Aureo",
-      "description": "Este engranaje ha pasado de generacion en generacion siendo perfeccionada para ser usada en el arma mas potente de cada civilizacion",
+      "id": "Aureum Gear",
+      "description": "This gear has been passed through generations perfected for its use in each civilization's most powerful weapon ",
       "era": "F",
       "health": "10",
       "movementVelocity": "10",
@@ -300,8 +300,8 @@
       "attack": "10"
     },
     {
-      "id": "Brazalete de Iones",
-      "description": "Este brazalete se invento para solventar el sedentarismo social. No lo consiguio, pero tal vez te resulta util",
+      "id": "Ionic Gauntlet",
+      "description": "This bracelet was invented to solve social sendentarism. It failed, but you might find some use",
       "era": "F",
       "health": "20",
       "movementVelocity": "10",
@@ -310,7 +310,7 @@
       "attack": "0"
     },
     {
-      "id": "Regalo",
+      "id": "Present",
       "description": "The past is history, the future is a mistery, but the present is a gift, that is why it's called the present",
       "era": "R",
       "health": "10",
@@ -320,8 +320,8 @@
       "attack": "25"
     },
     {
-      "id": "Reloj Digital",
-      "description": "Te apresura a llegar a tiempo y mide tu ritmo cardiaco",
+      "id": "Smartwatch",
+      "description": "Makes you arrive on time and calculates cardiac rythm",
       "era": "R",
       "health": "10",
       "movementVelocity": "25",
@@ -330,8 +330,8 @@
       "attack": "0"
     },
     {
-      "id": "Collar Gotico",
-      "description": "Un collar muy aclamado actualmente, el complemento esencial para todo joven",
+      "id": "Gothic Necklace",
+      "description": "A critically acclaimed necklace, the essential complement for every youngster",
       "era": "R",
       "health": "10",
       "movementVelocity": "25",
@@ -340,8 +340,8 @@
       "attack": "20"
     },
     {
-      "id": "Cinturon de Herramientas",
-      "description": "Como cierto superheroe cuyo nombre hace referencia a un mamifero alado",
+      "id": "Toolbelt",
+      "description": "Just like a certain superhero whose name resembles a specific flying mammal",
       "era": "R",
       "health": "0",
       "movementVelocity": "0",
@@ -350,8 +350,8 @@
       "attack": "0"
     },
     {
-      "id": "Cetro Papal",
-      "description": "Reparte hostias como panes",
+      "id": "Pope's Scepter",
+      "description": "Share the love. With the scepter. I am talking whackin'",
       "era": "P",
       "health": "15",
       "movementVelocity": "5",
@@ -360,8 +360,8 @@
       "attack": "30"
     },
     {
-      "id": "Libro Perdido",
-      "description": "Libro perteneciente a la biblioteca de Alejandria perdido por el tiempo, contiene secretos sobre la magia antigua",
+      "id": "Lost Chapter",
+      "description": "Book that got lost in the Alexandrian Library, contains secrets from the old magic",
       "era": "P",
       "health": "0",
       "movementVelocity": "0",
@@ -370,8 +370,8 @@
       "attack": "10"
     },
     {
-      "id": "Taza de Cafe",
-      "description": "Todo caballero ingles sabe apreciar una buena taza de cafe",
+      "id": "Coffee Mug",
+      "description": "Every English gentleman knows to appreciate a good coffee cup",
       "era": "P",
       "health": "15",
       "movementVelocity": "30",
@@ -380,8 +380,8 @@
       "attack": "0"
     },
     {
-      "id": "Barco en Miniatura",
-      "description": "En este barco antes habia gente diminuta viviendo en el, pero murieron tras estar la botella 2 siglos a la deriva por el mar",
+      "id": "Miniature Boat",
+      "description": "There was once miniature people living in the boat, but they died after because of the bottle being adrift in the sea for two centuries",
       "era": "P",
       "health": "0",
       "movementVelocity": "0",

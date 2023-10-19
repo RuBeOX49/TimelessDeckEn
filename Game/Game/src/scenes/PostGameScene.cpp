@@ -35,7 +35,7 @@ PostGameScene::PostGameScene(int dmg, int mlee, int rngd, int tnk, int mny, floa
 
 	GameObject* title = addGameObject(_grp_UI);
 	title->addComponent<Transform>(Vector2D(90, 65), VECTOR_ZERO, 400, 100);
-	title->addComponent<TextComponent>(&sdlutils().fonts().at("SILKSCREEN_BOLD38"), "ESTADISTICAS");
+	title->addComponent<TextComponent>(&sdlutils().fonts().at("SILKSCREEN_BOLD38"), "STATS");
 
 	faseCompleted = &sdlutils().soundEffects().at(FASE_COMPLETED_SOUND);
 	
@@ -63,47 +63,47 @@ void PostGameScene::showObject() {
 		faseCompleted->play();
 		text = addGameObject(_grp_UI);
 		text->addComponent<Transform>(Vector2D(70, 155), VECTOR_ZERO, 400, 100);
-		text->addComponent<TextComponent>(&sdlutils().fonts().at("SILKSCREEN_REGULAR28"), "Enemigos derrotados: " + to_string(melee + ranged + tank));
+		text->addComponent<TextComponent>(&sdlutils().fonts().at("SILKSCREEN_REGULAR28"), "Enemies defeated: " + to_string(melee + ranged + tank));
 		break;
 	case 2:
 		if (melee > 0) {
 			i++;
 			text = addGameObject(_grp_UI);
 			text->addComponent<Transform>(Vector2D(90, 155 + 60 * i), VECTOR_ZERO, 400, 100);
-			text->addComponent<TextComponent>(&sdlutils().fonts().at("SILKSCREEN_REGULAR28"), "Soldados: " + to_string(melee));
+			text->addComponent<TextComponent>(&sdlutils().fonts().at("SILKSCREEN_REGULAR28"), "Soldiers: " + to_string(melee));
 		}
 		if (ranged > 0) {
 			i++;
 			text = addGameObject(_grp_UI);
 			text->addComponent<Transform>(Vector2D(90, 155 + 60 * i), VECTOR_ZERO, 400, 100);
-			text->addComponent<TextComponent>(&sdlutils().fonts().at("SILKSCREEN_REGULAR28"), "Arqueros: " + to_string(ranged));
+			text->addComponent<TextComponent>(&sdlutils().fonts().at("SILKSCREEN_REGULAR28"), "Archers: " + to_string(ranged));
 		}
 		if (tank > 0) {
 			i++;
 			text = addGameObject(_grp_UI);
 			text->addComponent<Transform>(Vector2D(90, 155 + 60 * i), VECTOR_ZERO, 400, 100);
-			text->addComponent<TextComponent>(&sdlutils().fonts().at("SILKSCREEN_REGULAR28"), "Robustos: " + to_string(tank));
+			text->addComponent<TextComponent>(&sdlutils().fonts().at("SILKSCREEN_REGULAR28"), "Robusts: " + to_string(tank));
 		}
 		break;
 	case 3:
 		text = addGameObject(_grp_UI);
 		text->addComponent<Transform>(Vector2D(70, 245 + 180), VECTOR_ZERO, 400, 100);
-		text->addComponent<TextComponent>(&sdlutils().fonts().at("SILKSCREEN_REGULAR28"), "Vida perdida: " + to_string(damage));
+		text->addComponent<TextComponent>(&sdlutils().fonts().at("SILKSCREEN_REGULAR28"), "Health lost: " + to_string(damage));
 		break;
 	case 4:
 		text = addGameObject(_grp_UI);
 		text->addComponent<Transform>(Vector2D(70, 335 + 180), VECTOR_ZERO, 400, 100);
-		text->addComponent<TextComponent>(&sdlutils().fonts().at("SILKSCREEN_REGULAR28"), "Tiempo empleado: " + timeText + " s");
+		text->addComponent<TextComponent>(&sdlutils().fonts().at("SILKSCREEN_REGULAR28"), "Time spent: " + timeText + " s");
 		break;
 	case 5:
 		text = addGameObject(_grp_UI);
 		text->addComponent<Transform>(Vector2D(70, 425 + 180), VECTOR_ZERO, 400, 100);
-		text->addComponent<TextComponent>(&sdlutils().fonts().at("SILKSCREEN_REGULAR28"), "Dinero obtenido: " + to_string(money));
+		text->addComponent<TextComponent>(&sdlutils().fonts().at("SILKSCREEN_REGULAR28"), "Money obtained: " + to_string(money));
 		break;
 	case 6:
 		text = addGameObject(_grp_UI);
 		text->addComponent<Transform>(Vector2D(70, 425 + 180), VECTOR_ZERO, 400, 100);
-		text->addComponent<TextComponent>(&sdlutils().fonts().at("SILKSCREEN_REGULAR28"), "Dinero obtenido: " + to_string(money));
+		text->addComponent<TextComponent>(&sdlutils().fonts().at("SILKSCREEN_REGULAR28"), "Money obtained: " + to_string(money));
 		break;
 	case 7:
 		showPlayer();
@@ -114,7 +114,7 @@ void PostGameScene::showObject() {
 			newCard.second == 2 ? 560 : 620, 30), VECTOR_ZERO, 400, 100);
 		
 		text->addComponent<TextComponent>(&sdlutils().fonts().at("SILKSCREEN_BOLD38"), 
-			(newCard.second == 2 ? "NUEVAS CARTAS OBTENIDAS" : "NUEVA CARTA OBTENIDA"), build_sdlcolor(0xffffffff));
+			(newCard.second == 2 ? "NEW CARDS ACQUIRED" : "NEW CARD ACQUIRED"), build_sdlcolor(0xffffffff));
 		showCard();
 		break;
 	case 9:

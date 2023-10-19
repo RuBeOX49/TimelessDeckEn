@@ -19,10 +19,10 @@ gamepadConnection(nullptr) {
 	// Carga opciones si se hubieran cambiado en algun momento
 	loadOptions();
 
-	createControl("MUSICA", music, OptionId::_option_MUSIC, MUSIC_RECT);
-	createControl("EFECTOS DE SONIDO", sfx, OptionId::_option_SFX, FX_RECT);
-	createControl("PANTALLA COMPLETA", fullWindow, OptionId::_option_FULLWINDOW, FULL_WINDOW_RECT);
-	createControl("CONTROL", peripheral, OptionId::_option_PERIPHERAL, PERIPHERAL_RECT);
+	createControl("MUSIC", music, OptionId::_option_MUSIC, MUSIC_RECT);
+	createControl("SOUND EFFECTS", sfx, OptionId::_option_SFX, FX_RECT);
+	createControl("FULLSCREEN", fullWindow, OptionId::_option_FULLWINDOW, FULL_WINDOW_RECT);
+	createControl("CONTROL SCHEME", peripheral, OptionId::_option_PERIPHERAL, PERIPHERAL_RECT);
 }
 
 // Destructora
@@ -62,7 +62,7 @@ void OptionsMenuScene::addOptions() {
 		}
 	} 
 	});
-	controls[fullWindow.titleText].push_back({ "SI", []() {
+	controls[fullWindow.titleText].push_back({ "YES", []() {
 		SDL_Window* window_ = sdlutils().window();
 		auto flags = SDL_GetWindowFlags(window_);
 		if (!(flags & SDL_WINDOW_FULLSCREEN)) {
@@ -73,12 +73,12 @@ void OptionsMenuScene::addOptions() {
 	});
 
 	peripheral.titleText = addGameObject();
-	controls[peripheral.titleText].push_back({ "TECLADO + RATON", [&]() { 
+	controls[peripheral.titleText].push_back({ "KEYBOARD + MOUSE", [&]() { 
 		hideGamepadConnection(); 
 		gmCtrl().changeToKeyboard(); 
 	} 
 	});
-	controls[peripheral.titleText].push_back({ "MANDO", [&]() { 
+	controls[peripheral.titleText].push_back({ "CONTROLLER", [&]() { 
 		if (ih().isControllerConnected()) { gmCtrl().changeToGamepad(); }
 		else {
 			// Si el mando no esta conectado pero esta seleccionado el modo mando, 

@@ -20,7 +20,7 @@ private:
 	// Paso en el que estamos
 	int current;
 
-	string tutorialTexts[14] = {
+	string tutorialTextsEs[14] = {
 		// Movimiento
 		"¡Bienvenido a Timeless Deck! Yo soy Tuto y voy a ser tu guía en este lugar.\nPara empezar, siempre que aparezca aquí debes pulsar 'REANUDAR' para continuar.",
 		"\nDicho esto, prueba a moverte con los controles que te voy a mostrar por pantalla.",
@@ -50,9 +50,9 @@ private:
 		"\nCon esto dicho, solo me queda despedirme. ¡Ánimo en tu aventura! ¡Nos vemos en el espacio, cowboy!"
 	};
 
-	string tutorialTextsEn[14] = {
+	string tutorialTexts[14] = {
 		// Movimiento
-		"Welcome to Timeless Deck! I am Tuto and I will be your guide in this place.\n For starters, every time I show up you must press 'REANUDAR' to continue.",
+		"Welcome to Timeless Deck! I am Tuto and I will be your guide in this place.\n For starters, every time I show up you must press 'RESUME' to continue.",
 		"\nThat being said, try moving with the controls I will show you on screen",
 
 		// Carta
