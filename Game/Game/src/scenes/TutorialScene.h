@@ -61,7 +61,7 @@ private:
 
 		// Mano
 		"Great! On top of the four cards in your hand, you will have a discard pile and a deck, each one on one side.",
-		"When you consume a card, it will be discarded and if you have no more cards after that, you will draw 4 more from the deck. When the deck runs out of cards, the discard pile will shuffle and make a new deck. Try it!",
+		"When you consume a card, it will be discarded and if you have no more cards, you will draw 4 more. When the deck runs out of cards, the discard pile will shuffle and make a new deck. Try it!",
 
 		// Enemigos
 		"You're a fast learner! Here in this place you must defeat enemies in order to continue. These enemies will try to hurt you bad, so give it your everything to defeat them.",
